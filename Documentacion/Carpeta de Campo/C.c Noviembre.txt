@@ -16,8 +16,21 @@ C.c Noviembre
   Emiliano Romo Cordoba continuo con las reformas para la cabina del simulador, tomando las medidas para poner un soporte para el yoke, 
   Lautaro Esteban, Santiago Leiva y Leandro Flores Compraron los potenciometros digitales para poder trabajar con la comunicacion de los variadores, realizaron pruebas basicas con un potenciometro analogico para identificar la respuesta con el variador y verificar que las conexiones esten bien establecidas, luego realizaron las pruebas implementando el potenciometro digital y realizaron el codigo para ajustar el porcentaje de la resistencia del potenciometro digital a un rango de posicion de 0 a 100%. Y empezaron a implementar a las conexiones y al codigo el ESP32.
 7/11/24
-Jofiel Godoy continuó con el modelado 3D en TinkerCad para luego imprimirlo en una hoja A4 para así corroborar que las medidas reales son correctas. Esto lo hizo para que a la hora de imprimir el panel en 3D no hayan errores
+  Jofiel Godoy continuó con el modelado 3D en TinkerCad para luego imprimirlo en una hoja A4 para así corroborar que las medidas reales son correctas. Esto lo hizo para que a la hora de imprimir el panel en 3D no hayan errores
 Agustin Brizuela ubico el yoke pedestal en el simulador, modifico el pedestal para que sea mas compatible con el simulador, saco medidas del simulador para que se pueda modificar la estructura.
 Santiago Rubio y Lucas Meabrio soldaron la llave selectora, midieron el yoke, investigaron las variables para el panel de control e hicieron la programación de los movimientos del avión donde lograron transformar los datos en grados.
 Lautaro Esteban, Santiago Leiva, Leandro Flores agregaron las conexiones al MPU6050 y lo implementaron en el codigo, y debido a la sensibilidad inestable del potenciometro digital agregaron una libreria simple kanban system
 Emiliano Romocordoba Midio la base de la estructura, reforzo la soldadura del panel, coloco la base del monitor, agujereo la Base, Construyo Estructuras para sostener el yoke.
+8/11/24
+  Agustín Brizuela y Jofiel Godoy probaron los pulsadores, switches y la llave selectora a los agujeros con las medidas reales de una hoja A4 que nos servía como modelo de prueba. Con esto dedujimos cuán cerca de estarían de la medida real los componentes a colocar.
+
+9/11/24
+Lucas Meabrio, Agustín Brizuela, Santiago Rubio y Jofiel Godoy fueron a trabajar en la simulación del hardware del panel de control simulador de vuelo. Soldaron pines macho a los cables para que se conecte bien a la ArduinoUNO, y soldaron los cables a los pulsadores, switches y llave selectora. Por último testearon a MSFS2020 por medio de la aplicación MobiFlight y la ArduinoUNO todos los componentes del Panel de control. Funcionaron todos excepto dos estados de la llave selctora rotativa que simularía el Magneto. 
+
+10/11/24
+Santiago Rubio investigó acerca de como solucionar que en el magneto se detecten los ultimos dos estados "BOTH y START". Por lo que determinó que sería viable usar un pulsador que cumpla la función del start.
+Agustín Brizuela imprimió el modelo de prueba 3D con las medidas reales y probó cada componente para ver si entraban bien. 
+Jofiel Godoy corrigie las medidas de cada agujero para hacer la impresión 3D del para hacer la impresión 3D el Lunes 11 de Noviembre. 
+
+11/11/24
+Agustín Brizuela y Jofiel Godoy van imprimiran el modelo 3D del Panel de control. También determinaron como colocar eL PANEL impreso en la estructura para que quede lo más prolijo posible.
